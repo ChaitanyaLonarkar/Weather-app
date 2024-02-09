@@ -1,0 +1,47 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    /* height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 10px;
+    /* width: 400px; */
+    height: 500px;
+    border-radius: 4px;
+    color: aliceblue;
+    background-image: url("/src/assets/bac.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.container img{
+    width: 200px;
+}
+.container .search input{
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+}
+.container .search button{
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+ cursor: pointer;
+    background-color:  #2dff2a;
+}
