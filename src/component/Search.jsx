@@ -12,7 +12,7 @@ export default function Search(props) {
           <button onClick={props.Weather}>Search</button>
         </div>
         <div>
-          
+          <p>Made by <b>Chaitanya</b> </p>
         </div>
       </div>
     </>

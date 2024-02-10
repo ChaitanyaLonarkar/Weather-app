@@ -5,7 +5,7 @@ import Search from "./component/Search";
 import Result from "./component/Result";
 
 function App() {
-  const [result, setresult] = useState([]);
+  const [result, setresult] = useState();
   const [city, setcity] = useState("");
 
   
@@ -17,25 +17,16 @@ function App() {
     const data = response.data;
     console.log(data);
     setresult(data)
-    console.log("this is my data here",result)
-    console.log(result.name,result.main.temp);
+    // console.log("this is my data here",result)
+    // console.log(result.name,result.main.temp);
     
 
   };
   return (
     <>
-        {/* <input
-          type="text"
-          placeholder="Enter city"
-          onChange={(e) => {
-            setcity(e.target.value);
-          }}
-        />
-        <button onClick={getWeather}>get</button>
-        <p>{city}</p> */}
-      <Search  Weather={getWeather} city={setcity}/>
-      <Result result={result}/>
-      {/* <p>{result.name}</p> */}
+      
+      { result? (<Result result={result}/>):(<Search  Weather={getWeather} city={setcity}/>)}
+      
     </>
   );
 }

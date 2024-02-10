@@ -1,7 +1,7 @@
-body{
-    margin: 0px;
-    padding: 0px;
-    /* height: 100vh;
+body {
+  margin: 0px;
+  padding: 0px;
+  /* height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -10,62 +10,100 @@ body{
 } */
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    /* width: 400px; */
-    height: 500px;
-    border-radius: 4px;
-    color: aliceblue;
-    background-image: url("/src/assets/bac.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    font-family: system-ui;
+.container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  /* width: 400px; */
+  height: 500px;
+  border-radius: 4px;
+  color: rgb(255, 255, 255);
+  background-image: url("/src/assets/bac.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  font-family: system-ui;
+  
 }
 
-.container img{
-    width: 200px;
+.container img {
+  width: 200px;
 }
-.container .search input{
-    padding: 10px;
-    font-size: 15px;
-    border: none;
-    border-radius: 2px;
-    outline: none;
-    background: #f0f8ff1f;
-    color: aliceblue;
+.container .search input {
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  background: #f0f8ff1f;
+  color: aliceblue;
 }
-.container .search input::placeholder{
-    color: yellow;
+.container .search input::placeholder {
+  color: yellow;
 }
 
 .container .search {
-    margin: 30px;
+  margin: 30px;
 }
 
-
-.container .search button{
-    padding: 10px;
-    font-size: 15px;
-    border: none;
-    border-radius: 2px;
-    outline: none;
- cursor: pointer;
-    background-color:  #2dff2a;
+.container .search button {
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+  background-color: #2dff2a;
 }
-.city-name h3{
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 35px;
-    margin: 15px 0px;
+.city-name h3 {
+  text-align: center;
+  /* font-family: sans-serif; */
+  font-size: 35px;
+  margin: 15px 0px;
+  font-family: Montserrat;
+
 }
 
-.temp h1{
-    font-size: 80px;
-    margin: 10px 0px;
+.temp h1 {
+  font-size: 60px;
+  margin: 10px 0px;
+  font-family: Montserrat;
+  margin-bottom: 0px;
+
+}
+.info {
+  /* margin-top: 30px; */
+  width: 261px;
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 25px;
+  /* column-count: 2; */
+  /* gap: 50px; */
+  /* border: 1px solid green; */
+  /* justify-content: space-around; */
+}
+.details h4,
+.details p {
+  margin: 0px;
+}
+
+.head p {
+  margin: 0px;
+  margin-bottom: 20px;
+}
+.temp p{
+    margin: 0px;
+}
+p,h3,h4,h1{
+  font-family: Montserrat;
+
+}
+
+.line{
+  width: 100px;
+  border-bottom: 3px dashed white;
+  margin-top: 15px;
 }
