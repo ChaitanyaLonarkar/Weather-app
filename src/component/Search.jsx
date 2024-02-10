@@ -6,10 +6,13 @@ export default function Search(props) {
       <div className="container">
         <h1>React Weather App</h1>
         <img src={cloud} alt="" />
-        <h2>Explore Weather of your city</h2>
+        <h3>Explore Weather of your city</h3>
         <div className="search">
-          <input type="text" onChange={(e)=>setcity(e.target.value)} placeholder="Enter your city" />
-          <button onClick={props.weather}>Search</button>
+          <input type="text" onChange={(e)=>{props.city(e.target.value)}} placeholder="Enter your city" />
+          <button onClick={props.Weather}>Search</button>
+        </div>
+        <div>
+          
         </div>
       </div>
     </>

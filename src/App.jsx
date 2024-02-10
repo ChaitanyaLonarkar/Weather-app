@@ -2,11 +2,12 @@ import { useState } from "react";
 import "./App.css";
 import axios from "axios";
 import Search from "./component/Search";
+import Result from "./component/Result";
 
 function App() {
+  const [result, setresult] = useState([]);
   const [city, setcity] = useState("");
 
-  const [result, setresult] = useState();
   
   const getWeather = async (e) => {
     e.preventDefault();
@@ -16,7 +17,10 @@ function App() {
     const data = response.data;
     console.log(data);
     setresult(data)
-    console.log(result);
+    console.log("this is my data here",result)
+    console.log(result.name,result.main.temp);
+    
+
   };
   return (
     <>
@@ -29,8 +33,9 @@ function App() {
         />
         <button onClick={getWeather}>get</button>
         <p>{city}</p> */}
-      <Search Weather={getWeather}/>
-
+      <Search  Weather={getWeather} city={setcity}/>
+      <Result result={result}/>
+      {/* <p>{result.name}</p> */}
     </>
   );
 }
