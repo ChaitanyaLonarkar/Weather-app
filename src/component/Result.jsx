@@ -90,6 +90,7 @@ export default function Result(props) {
             <p>Pressure</p>
           </div>
         </div>
+        
       </div>
     </>
   );
