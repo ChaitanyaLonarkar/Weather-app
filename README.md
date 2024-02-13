@@ -1,7 +1,8 @@
+
+# Weather App
 # Go live 
 https://its-weather-app.netlify.app/
 
-# Weather App
 # Overview
 This Weather App is a simple yet effective tool built using React.js. It provides users with real-time weather information for any location worldwide, powered by a reliable weather API.
 
